@@ -16,9 +16,9 @@ from urllib.request import Request, urlopen
 import json
 from pprint import pprint
 
-MATRICULA = '20171148060024'
-TOKEN = 'uqrHAd6bFe66aRVQjDrFsa3xlEtqumFue77WLbIit6DhMoyosxpvG7B1DtAcJyh8'
-AUTHORIZATION = 'Basic MjAxNzExNDgwNjAwMjQ6aWZybi4yMTAyODI='
+MATRICULA = ''
+TOKEN = ''
+AUTHORIZATION = ''
 
 req = Request('https://suap.ifrn.edu.br/api/v2/edu/alunos/{}/'.format(MATRICULA))
 req.add_header('Accept', 'application/json')
