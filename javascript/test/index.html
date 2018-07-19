@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Teste em JavaScript da API do SUAP</title>
+  </head>
+  <body>
+    <script src="../suap-client.min.js"></script>
+    <script>
+    var res = SuapClient.getData(
+                        {
+                          url: "api/v2/minhas-informacoes/meus-dados",
+                          auth: "",
+                          didLoad: null
+                        });
+
+    res.onload = function() {
+      var div = document.createElement("div");
+      var text = document.createTextNode(res.response);
+      div.appendChild(text);
+      document.querySelector("body").appendChild(div)
+    }
+    </script>
+  </body>
+</html>
